@@ -1,0 +1,187 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-size: 6.5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 5rem;
+}
+h6 {
+  font-size: 1.5rem;
+}
+
+li,
+a {
+  font-size: 2.5rem;
+}
+a {
+  text-decoration: none;
+  color: #252123;
+}
+
+/* HEADER (WHERE THE NAVIGATION LIES) */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  background-color: #fff786;
+}
+header ul {
+  padding: 0 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul li {
+  flex: 1;
+  display: inline;
+  list-style-type: none;
+  text-align: center;
+}
+header ul li:hover {
+  text-decoration: underline;
+}
+/* SECTIONS IN ALL PAGES */
+.intro,
+.educ,
+.profile-section,
+.port,
+.port-list {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* HOME PAGE */
+.intro-social {
+  margin-top: 4rem;
+}
+.intro-social img {
+  margin: 0 6rem 0 0;
+  width: 45px;
+  height: 45px;
+  transition: 0.4s;
+}
+.intro-social img:hover {
+  background-color: #fff786;
+}
+
+/* EDUCATION PAGE */
+.educ {
+  height: 90vh;
+}
+.column {
+  flex: 1;
+  padding: 30px;
+}
+.column img {
+  width: 100%;
+}
+
+/* SPECIFIC PORTFOLIO PAGES */
+.port {
+  width: 70%;
+  flex-direction: column;
+}
+.port-img {
+  margin-top: 50px;
+}
+.port-text {
+  margin-top: 50px;
+}
+.port-img img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* GENERAL PORTFOLIO PAGE (LIST) */
+.port-list {
+  display: flex;
+  height: 90vh;
+}
+.port-card {
+  flex: 1;
+  margin: 2rem;
+  text-align: center;
+  border-radius: 10%;
+  transition: 0.5s;
+}
+.port-card:hover {
+  flex: 1.2;
+}
+.port-card p {
+  padding: 10px;
+}
+.port-card img {
+  width: 100%;
+  border-radius: 10%;
+  object-fit: cover;
+  object-position: 0%;
+  height: 550px;
+  transition: 0.5s;
+}
+.port-card img:hover {
+  box-shadow: 5px 5px 50px 10px #ffd478;
+  object-position: 100%;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #fff786;
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 940px) {
+  header {
+    height: 500px;
+  }
+  header ul {
+    flex-direction: column;
+  }
+  header ul li {
+    padding: 3.5rem 0;
+  }
+  .intro {
+    flex-direction: column;
+  }
+  .intro-image {
+    width: 100%;
+  }
+  .educ,
+  .profile-section {
+    flex-direction: column;
+    height: auto;
+  }
+  .column {
+    margin-bottom: 20px;
+  }
+  .port-list {
+    flex-direction: column;
+    height: auto;
+  }
+  .port-card {
+    width: 100%;
+  }
+}
